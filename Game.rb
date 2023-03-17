@@ -32,6 +32,8 @@ class Game
       end
 
       check_winner(player)
+      next unless @game_over
+
       check_draw(available_positions)
 
       player = player == @p1 ? @p2 : @p1
